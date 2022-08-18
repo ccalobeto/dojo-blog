@@ -1,0 +1,9 @@
+#2
+npx create-react-app dojo-blog
+npm run start
+npm install (install node_modules directory) because it isn't in gitgub
+
+#3
+Describe components: templates and logic
+use htlm and jsx
+
