@@ -5,5 +5,60 @@ npm install (install node_modules directory) because it isn't in gitgub
 
 #3
 Describe components: templates and logic
-use htlm and jsx
+use htlm in most of files and jsx template in App.js
+
+#4
+create and use variables 
+single values are print in the dom easily
+Use special components: h1,p,a
+Export para mostrar el componente en el dom
+
+#5 Multiple Components
+(Goal: Create two components inside App.js)
+
+App.js the first component redered to the DOM 
+
+Component is a function that returns a jsx template and it is exported at the bottom of the file
+
+Root component is App.js:
+App.js
+    - Navbar.js
+    - BlogDetails.js
+    - Sidebar.js
+        + Categories.js
+        + Tags.js
+
+install simple react snippets to choose templates while coding
+- sfc: create a component in an easy way
+
+import the Navbar component inside app.js
+look the self close at 4:30
+
+#6 Adding styles
+styles in App.css, it applies to all components. It is like a global stylesheet
+
+changes the styles from App.css to index.css
+
+inline styling check doble brackets (5:21) dinamic value and javascript object 
+
+#7 Click Events
+example of events: hover, click, keyboards
+
+create a button
+
+create a function and assign it to an element that fires a text in console
+
+dont put and argument into handleClick because it fires automatically
+
+uses an anonimous function
+
+shows an event object. It is a dict
+
+#8 Using state(useState hook)
+data inside the component which changes after a button is press for example
+useState (a hook) renders a variable in the template. It is called reactive value
+
+
+#9 Intro dev tools
+
 
