@@ -1,7 +1,7 @@
 #2
 npx create-react-app dojo-blog
-npm run start
-npm install (install node_modules directory) because it isn't in gitgub
+npm run start # levantar el localhost
+npm install node_modules (node_modules because it isn't in gitgub)
 
 #3
 Describe components: templates and logic
@@ -55,10 +55,92 @@ uses an anonimous function
 shows an event object. It is a dict
 
 #8 Using state(useState hook)
-data inside the component which changes after a button is press for example
-useState (a hook) renders a variable in the template. It is called reactive value
-
+ You need to create a reactive variable with useState (hook) so if you initially displayed 'mario' and then click a button, it renders in the dome and the name displayed now is luigui. It uses setName and setAge functions to do it.
 
 #9 Intro dev tools
+It allows you to debug and test your application
+Install react developer tools installs two extra tabs in the console menu: components and profiler.
+The eye icon goes to a dom element
+the spider icon & console goes to the app component
+<> icon let you go to the source file
 
+#10 Outputting lists
+This time you will update blogs uses a map function that cycles(bucle) through an array (a list of blogs for example, separated later in BlogList.js) with an id into the dom 
+
+#11 Props
+Way to pass data from a parent component into a child component. In Home.js, he parent is const[blogs, setBlogs] an the child is BlogList. 
+The prop is blogs={blogs}
+
+#12 Reusing Components
+The use of filters to show a sublist of the array 
+
+#13 Functions as Props
+To Delete blogs you need to pass the id. But create the handleDelete function in the same file where is setBlog method and pass it as a prop
+
+#14 useEffect Hook (the basis)
+useEffect runs a function every rendered of the components. 
+Applications are to fetch data or do some authentication
+
+#15 useEffect dependencies
+
+#16 Using JSON server (ver JSON server tutorial)
+JSON server is a package that simulates a fake response api (json response)
+See the tutorial https://www.youtube.com/watch?v=mAqYJF-yxO8&list=PL4cUxeGkcC9i2v2ZqJgydXIcRq_ZizIdD&index=2
+
+open another terminal: **npx json-server --watch data/db.json --port 8000 **
+
+End points:
+    /blogs          GET     Fetch all blogs
+    /blogs/{id}     GET     Fetch a single blog
+    /blogs          POST    Add a new blog
+    /blogs/{id}     DELETE  Delete a blog
+
+
+#17 Fetching data with useEffect
+Pulled json data to localhost, extract this data and show in the app content
+An special rutine to avoid the first null appereance (manage a conditional templating &&). 
+
+#18 Conditional Loading Message
+Show a message "loading data ..."
+Introduce a time delay (1 sec.) in the dom
+
+#19
+Simulate an error and see how the error is handle (like http://localhost:8000/blogss). Put in console and dom.
+
+Ernesto example: 3 niveles de manejo de errores(1. Capturar el error, 2. Mail al responsable del código en el github y 3. Mostrar el tableros en BI)
+
+#20 Making a Custom Hook
+Reuse the code of a component with the same properties (data, pending and error)
+create a file useFetch.js
+a custom hook force to start with "use"
+move the the properties and behavior. dont forget to export
+change the property setBlogs to setData
+correct design is to pass the url to useFetch
+
+then import into the home component and use it
+data:blogs change the name of the variable
+
+#21 The react Router
+to handle many pages
+theory of non-react websites
+initial request from your computer and the server returns the index.html
+then click on contact page, contact request and the server returns contact.html
+and over again
+
+theory of react websites
+less request to the server because it stays on the client side
+
+initial request and server returns index.html and js bundle (of react)
+/contact request reacts intercepts in the client side and returns to update the DOM
+
+/           /contact            /about 
+Home.js     Contact.js          About.js
+
+set up on terminal these tools: *** npm install react-router-dom@5 ***
+check the instalation in package.json "react-router-dom": "^5.3.3"
+
+Switch to change pages in the App.js 
+
+#22 Exact Match Routes
+min. 
 
