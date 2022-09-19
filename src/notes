@@ -139,8 +139,45 @@ Home.js     Contact.js          About.js
 set up on terminal these tools: *** npm install react-router-dom@5 ***
 check the instalation in package.json "react-router-dom": "^5.3.3"
 
-Switch to change pages in the App.js 
+Switch with Route to change components (like pages) in the App.js
+One Route
 
 #22 Exact Match Routes
-min. 
+Another form or two routes
+use exact to display the forms correctly
+switch component: 
+obs. why click 
 
+#23 Router links(!)
+links to handle the routing in the browser (intercept the requests, don't go to server)
+import the link into navbar
+change the href to link
+
+#24 useEffect Cleanup
+manage clicks between fetches. 
+In two quickly fetches there is an error in console. To solve, use a clean up funtion and abort controller
+
+use an abort controller
+
+#25 Route Parameters
+variables inside route. use ids
+hay problemas de comillas check
+recibir dos parametros en app.js así /a/b
+
+#26 Re-using a Custom Hook
+todo el video
+el equipo tambien va usar flutter
+
+#27 Controlled inputs(forms)
+Matar todo en un puerto kill -9 $(lsof -ti:3000)
+objetos y estilos separados 
+Llenar un formulario con eventos asociados
+
+#28 submit events
+not to erase recent values
+
+#29 Making a POST request
+create blog object
+ernesto detectó un error
+
+#30 Programatic Redictects
